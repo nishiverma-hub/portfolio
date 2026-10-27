@@ -21,3 +21,9 @@ Live site: https://YOURUSERNAME.github.io/nishi-verma-portfolio/
 ## Before you publish
 - Remove confidential drawings, rates and client names from any image.
 - Keep each image under about 500 KB.
+<h1 align="center">Welcome to My GitHub Profile</h1>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Infrastructure-7C3AED?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Engineering-0D9488?style=for-the-badge" />
+</p>
