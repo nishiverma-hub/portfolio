@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nishi Verma | Civil Engineer, Water and Infrastructure</title>
+<meta name="description" content="Portfolio of Nishi Verma, civil engineer with 8+ years in water, roads and public building delivery. Relocating to Ireland.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#eef1f2; --sheet:#ffffff; --ink:#14283a; --muted:#51616f;
+  --line:#9fb0bb; --teal:#0f5c63; --mark:#f2c200;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.6 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--teal);text-underline-offset:3px}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--mark);outline-offset:3px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:"Bricolage Grotesque",Georgia,serif;line-height:1.1;margin:0}
+h1{font-size:clamp(2.6rem,8vw,5rem);font-weight:700;letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,4vw,2.2rem);font-weight:700;margin-bottom:1.25rem}
+h3{font-size:1.5rem;font-weight:700}
+p{margin:0 0 1rem;max-width:62ch}
+
+/* Hero: a drawing sheet with a title block */
+.hero{padding:3.5rem 0 3rem}
+.hero .lead{font-size:1.25rem;margin-top:1.25rem;max-width:40ch}
+.titleblock{margin-top:2.25rem;border:2px solid var(--ink);background:var(--sheet);display:grid;grid-template-columns:repeat(auto-fit,minmax(12rem,1fr))}
+.titleblock div{padding:.75rem 1rem;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.titleblock dt{font-size:.85rem;color:var(--muted)}
+.titleblock dd{margin:0;font-weight:500}
+.titleblock{margin-bottom:0}
+.titleblock dl{display:contents}
+
+/* Sheet index */
+nav.index{background:var(--ink);color:#fff}
+nav.index .wrap{display:flex;flex-wrap:wrap;gap:.25rem 1.5rem;padding-top:.9rem;padding-bottom:.9rem}
+nav.index a{color:#fff;text-decoration:none;padding:.25rem 0;border-bottom:2px solid transparent}
+nav.index a:hover{border-bottom-color:var(--mark)}
+
+section{padding:3.5rem 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(11rem,1fr));gap:0;border-top:2px solid var(--ink);margin-top:1.5rem}
+.stats div{padding:1rem 1rem 1rem 0}
+.stats b{display:block;font-family:"Bricolage Grotesque",serif;font-size:2rem;line-height:1.1}
+.stats span{color:var(--muted);font-size:.95rem}
+
+/* Projects */
+.project{background:var(--sheet);border:2px solid var(--ink);margin-bottom:2rem}
+.project header{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem 1rem;padding:1rem 1.25rem;border-bottom:2px solid var(--ink)}
+.project header span{color:var(--muted)}
+.project .body{display:grid;grid-template-columns:1.2fr 1fr}
+.project .text{padding:1.25rem}
+.photos{display:grid;grid-template-rows:1fr 1fr;border-left:2px solid var(--ink)}
+.photo{min-height:11rem;background-size:cover,auto;background-position:center;
+  background-image:var(--img),repeating-linear-gradient(135deg,#e3e9ec 0 10px,#d3dce1 10px 11px);
+  display:flex;align-items:flex-end}
+.photo+.photo{border-top:1px solid var(--line)}
+.photo small{background:rgba(255,255,255,.92);padding:.2rem .5rem;font-size:.8rem;color:var(--muted)}
+.facts{margin:1rem 0 0;padding:0;list-style:none;border-top:1px solid var(--line)}
+.facts li{padding:.55rem 0;border-bottom:1px solid var(--line)}
+.facts b{font-weight:500}
+.tools{color:var(--muted);font-size:.95rem;margin:.9rem 0 0}
+mark{background:var(--mark);padding:0 .2rem}
+
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(16rem,1fr));gap:1.25rem}
+.more div{border-top:2px solid var(--ink);padding-top:.75rem}
+.more h3{font-size:1.2rem;margin-bottom:.4rem}
+
+ul.plain{padding-left:1.1rem;margin:0}
+ul.plain li{margin-bottom:.35rem}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(18rem,1fr));gap:2rem}
+.contact a.btn{display:inline-block;background:var(--ink);color:#fff;text-decoration:none;padding:.7rem 1.2rem;margin:0 .6rem .6rem 0;font-weight:500}
+.contact a.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--ink);padding:.6rem 1.1rem}
+footer{border-top:2px solid var(--ink);padding:1.5rem 0 3rem;color:var(--muted);font-size:.9rem}
+
+@media (max-width:720px){
+  .project .body{grid-template-columns:1fr}
+  .photos{border-left:0;border-top:2px solid var(--ink);grid-template-rows:none;grid-template-columns:1fr 1fr}
+  .photo+.photo{border-top:0;border-left:1px solid var(--line)}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <h1>Nishi Verma</h1>
+    <p class="lead">Civil engineer delivering water, road and public building projects for 8+ years. Relocating to Ireland.</p>
+    <dl class="titleblock">
+      <div><dt>Role</dt><dd>Site and Project Engineer</dd></div>
+      <div><dt>Current</dt><dd>Consulting Engineer, Panchayati Raj Department</dd></div>
+      <div><dt>Based in</dt><dd>Kanpur, India</dd></div>
+      <div><dt>Work status</dt><dd>Requires an Irish employment permit (Critical Skills route)</dd></div>
+    </dl>
+  </div>
+</header>
+
+<nav class="index" aria-label="Page sections">
+  <div class="wrap">
+    <a href="#work">Projects</a>
+    <a href="#other">Other work</a>
+    <a href="#credentials">Credentials</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<main>
+<section id="work">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <p>Public infrastructure delivered through the Panchayati Raj Department, Uttar Pradesh. Values are shown in euros with the rupee figure beside them.</p>
+
+    <div class="stats">
+      <div><b>554+</b><span>estimates and DPRs certified</span></div>
+      <div><b>€7.2m</b><span>works value (₹80+ crore)</span></div>
+      <div><b>30</b><span>engineers and field staff led</span></div>
+      <div><b>28 months</b><span>with zero safety incidents</span></div>
+    </div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+
+    <article class="project" id="jjm">
+      <header><h3>Jal Jeevan Mission: rural water supply</h3><span>Uttar Pradesh, 2022 to present</span></header>
+      <div class="body">
+        <div class="text">
+          <p>Household tap water for rural villages. I prepared the Detailed Project Reports that turn a village's need into a costed, buildable scheme.</p>
+          <ul class="facts">
+            <li><b>Role:</b> Consulting Engineer, estimation and technical review</li>
+            <li><b>Output:</b> <mark>260 DPRs</mark> prepared for the mission</li>
+            <li><b>Scope:</b> water supply infrastructure, household connections, sustainable drinking water management</li>
+          </ul>
+          <p class="tools">Tools: AutoCAD, BOQ and estimation</p>
+        </div>
+        <div class="photos">
+          <div class="photo" style="--img:url('images/jjm-1.jpg')" role="img" aria-label="Water supply site photo"><small>Add images/jjm-1.jpg</small></div>
+          <div class="photo" style="--img:url('images/jjm-2.jpg')" role="img" aria-label="Water supply drawing"><small>Add images/jjm-2.jpg</small></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project" id="programme">
+      <header><h3>Local infrastructure programme: 499 councils</h3><span>Uttar Pradesh, 2022 to present</span></header>
+      <div class="body">
+        <div class="text">
+          <p>Roads, drainage, health buildings, schools, water supply and sanitation across 499 local councils and one district authority, serving 2.015 million people.</p>
+          <ul class="facts">
+            <li><b>Role:</b> technical lead for a team of up to 30</li>
+            <li><b>Quality:</b> site inspection and QA/QC, working with main contractors, trade contractors and government stakeholders</li>
+            <li><b>Result:</b> <mark>20% better</mark> deadline adherence</li>
+            <li><b>Safety:</b> site-specific HSEQS plans, zero incidents for 28 months</li>
+            <li><b>Procurement:</b> tender documents and technical specifications</li>
+          </ul>
+          <p class="tools">Tools: AutoCAD, BOQ, site QA/QC records</p>
+        </div>
+        <div class="photos">
+          <div class="photo" style="--img:url('images/programme-1.jpg')" role="img" aria-label="Completed council building"><small>Add images/programme-1.jpg</small></div>
+          <div class="photo" style="--img:url('images/programme-2.jpg')" role="img" aria-label="Site inspection"><small>Add images/programme-2.jpg</small></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project" id="freelance">
+      <header><h3>Private client construction, 150+ clients</h3><span>Kanpur, 2017 to 2021</span></header>
+      <div class="body">
+        <div class="text">
+          <p>Residential and commercial projects from feasibility through handover, covering BOQs, cost estimates, drawings and site supervision.</p>
+          <ul class="facts">
+            <li><b>Value:</b> €1.8m+ delivered (₹20+ crore)</li>
+            <li><b>Result:</b> <mark>15% lower</mark> labour cost and 10% less waste through programme changes</li>
+            <li><b>Delivery:</b> on time and on quality across engagements</li>
+          </ul>
+          <p class="tools">Tools: AutoCAD, BOQ and cost estimation</p>
+        </div>
+        <div class="photos">
+          <div class="photo" style="--img:url('images/private-1.jpg')" role="img" aria-label="Private project site photo"><small>Add images/private-1.jpg</small></div>
+          <div class="photo" style="--img:url('images/private-2.jpg')" role="img" aria-label="Private project drawing"><small>Add images/private-2.jpg</small></div>
+        </div>
+      </div>
+    </article>
+
+    <article class="project" id="research">
+      <header><h3>Wastewater treatment research</h3><span>Published August 2014</span></header>
+      <div class="body">
+        <div class="text">
+          <p>Published paper on using carbon nanotubes for wastewater filtration, written at university and printed in the Journal of Civil Engineering and Environmental Technology.</p>
+          <ul class="facts">
+            <li><b>Title:</b> New Techniques of Waste Water Treatment</li>
+            <li><b>Topic:</b> filtration and treatment using carbon nanotubes</li>
+          </ul>
+        </div>
+        <div class="photos">
+          <div class="photo" style="--img:url('images/paper-1.jpg')" role="img" aria-label="Paper first page"><small>Add images/paper-1.jpg</small></div>
+          <div class="photo" style="--img:url('images/paper-2.jpg')" role="img" aria-label="Paper figure"><small>Add images/paper-2.jpg</small></div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="other" style="padding-top:0">
+  <div class="wrap">
+    <h2>Other work</h2>
+    <div class="more">
+      <div><h3>Roads</h3><p>Rural road development under PMGSY.</p></div>
+      <div><h3>Buildings</h3><p>Government schools, institutional buildings, staff housing, and renovation of public buildings.</p></div>
+      <div><h3>Networks</h3><p>Water supply and sewerage networks, plus the Swachh Bharat Mission sanitation programme.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials" style="background:var(--sheet);border-top:2px solid var(--ink);border-bottom:2px solid var(--ink)">
+  <div class="wrap cols">
+    <div>
+      <h2>Credentials</h2>
+      <ul class="plain">
+        <li>B.Tech Civil Engineering, Dr. A.P.J. Abdul Kalam Technical University, Gold Medalist</li>
+        <li>ISO 19650 Information Manager, Level 3</li>
+        <li>FIDIC: Risk Management and Quality Management</li>
+        <li>Sustainable Construction and Development, CIOB</li>
+        <li>Procore Certified: Project Manager</li>
+        <li>Introduction to Construction Safety, Health and Safety Authority (Ireland)</li>
+        <li>Introduction to Lean Construction, Atlantic Technological University</li>
+        <li>In progress: PMP and Engineers Ireland chartership</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Tools</h2>
+      <ul class="plain">
+        <li>AutoCAD, STAAD.Pro, Primavera P6</li>
+        <li>Revit (beginner to intermediate)</li>
+        <li>BOQ, estimation and tender documents</li>
+        <li>QA/QC, site supervision, HSEQS</li>
+      </ul>
+      <p style="margin-top:1rem">Languages: English and Hindi (professional), French (limited working).</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Contact</h2>
+    <p>I am looking for civil, project or site engineer roles in Ireland, on site or hybrid, and I need employer support for an employment permit.</p>
+    <a class="btn" href="mailto:er.nishiverma@gmail.com">Email me</a>
+    <a class="btn alt" href="https://www.linkedin.com/in/nishi-verma1">View LinkedIn</a>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">Nishi Verma, Kanpur, Uttar Pradesh. Project images are used with permission and exclude confidential drawings and rates.</div></footer>
+</body>
+</html>
